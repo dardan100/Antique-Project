@@ -1,0 +1,1124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Oswald', sans-serif;
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  @media (min-width: 1025px) {
+    #intro nav {
+      background-color: rgba(0, 0, 0, 0.6);
+      height: 70px;
+      padding-top: 5px;
+      position: fixed;
+      width: 100%;
+      z-index: 99;
+    }
+    #intro nav .container-menu {
+      display: flex;
+      justify-content: end;
+    }
+    #intro nav .container-menu ul {
+      display: flex;
+      gap: 60px;
+      font-size: 35px;
+      padding-right: 80px;
+      list-style: none;
+    }
+    #intro nav .container-menu ul a {
+      color: #cc9966;
+      text-decoration: none;
+    }
+    #intro nav .container-menu ul a:hover {
+      border-bottom: 3px solid #cc9966;
+    }
+    #intro nav .container-menu ul a:focus {
+      border-bottom: 3px solid #cc9966;
+    }
+    #intro nav .container-menu ul a .input:focus {
+      outline: none !important;
+      border: 1px solid #CC9966;
+      box-shadow: 0 0 10px #b67533;
+    }
+    main {
+      background-image: url(/antique-cafe-bg-01.jpg);
+      background-attachment: fixed;
+      height: 185vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    main .container {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-top: 100px;
+      position: relative;
+    }
+    main .upper-text {
+      display: grid;
+      align-items: center;
+      width: 500px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 25px;
+    }
+    main .upper-text p {
+      margin-top: 15px;
+      color: #cc9966;
+    }
+    main .bottom-text {
+      display: grid;
+      align-items: center;
+      width: 500px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.7;
+    }
+    main .bottom-text a {
+      text-decoration: none;
+      color: yellow;
+    }
+    main .bottom-text a:hover {
+      color: aqua;
+    }
+    main .text-explore a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 25px;
+      left: 140px;
+      gap: 10px;
+      max-width: 228px;
+      border-radius: 10px;
+      height: 80px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #cc9966;
+      padding: 25px;
+      font-size: 25px;
+      text-decoration: none;
+    }
+    main .text-explore a:hover {
+      color: white;
+    }
+    #menu {
+      background-image: url(/antique-cafe-bg-02.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 200vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    #menu .title {
+      text-align: center;
+      margin: 140px auto;
+      font-size: 25px;
+      width: 400px;
+      background-color: white;
+      color: #666;
+      border-radius: 20px;
+    }
+    #menu .container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 200px;
+    }
+    #menu .left-menu {
+      background-color: rgb(126, 51, 51);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      padding: 50px;
+      gap: 20px;
+    }
+    #menu .left-menu .img1 {
+      display: flex;
+      margin-right: 10px;
+    }
+    #menu .left-menu .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 10px;
+    }
+    #menu .left-menu .text h3 {
+      margin-top: -4px;
+      color: #cc9966;
+    }
+    #menu .left-menu .text div {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+    #menu .right-menu {
+      background-color: rgb(126, 51, 51);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      padding: 50px;
+      gap: 20px;
+    }
+    #menu .right-menu .img2 {
+      display: flex;
+      margin-right: 10px;
+    }
+    #menu .right-menu .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 10px;
+    }
+    #menu .right-menu .text h3 {
+      margin-top: -4px;
+      color: #cc9966;
+    }
+    #menu .right-menu .text div {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+    #about {
+      background-image: url(/antique-cafe-bg-03.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 1064px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    #about .container {
+      position: relative;
+    }
+    #about .container .wrapper {
+      max-width: 500px;
+      height: 450px;
+      position: absolute;
+      right: 80px;
+      top: 250px;
+      padding: 50px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+    }
+    #about .container .wrapper .about-our-cafe {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      font-size: larger;
+      line-height: 1.6;
+    }
+    #about .container .wrapper .about-our-cafe h1 {
+      padding-bottom: 20px;
+      color: #006666;
+    }
+    #about .container .wrapper a {
+      color: white;
+      border: 0;
+      position: absolute;
+      width: 180px;
+      height: 56px;
+      bottom: -100px;
+      left: -1px;
+      font-size: 1.5rem;
+      background-color: #006666;
+      border-radius: 10px;
+      padding-left: 35px;
+      padding-top: 7px;
+      text-decoration: none;
+    }
+    #about .container .wrapper a:hover{
+        background-color: #007a7a;
+    }
+    #contact {
+      background-image: url(/antique-cafe-bg-04.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 185vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      position: relative;
+    }
+    #contact .container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 200px;
+    }
+    #contact .left-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      max-width: 500px;
+      height: 500px;
+      position: relative;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    #contact .left-container .wrapper-left h1 {
+      margin: 15px 0 15px 0;
+      font-size: 40px;
+      color: #006666;
+    }
+    #contact .left-container .wrapper-left p {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+    #contact .left-container .wrapper-left span {
+      font-size: 20px;
+      color: black;
+    }
+    #contact .left-container .wrapper-left a {
+      color: #006666;
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    #contact .left-container .map {
+      background-color: #006666;
+      position: absolute;
+      border: 0;
+      width: 250px;
+      height: 86px;
+      bottom: 25px;
+      left: 140px;
+      font-size: 1.8rem;
+      border-radius: 10px;
+      padding-left: 18px;
+      padding-top: 18px;
+    }
+    #contact .left-container .map:hover{
+        background-color: #007a7a;
+    }
+    #contact .left-container .map i {
+      color: white;
+      padding-right: 25px;
+    }
+    #contact .right-container {
+      background-color: rgba(0, 0, 0, 0.8);
+      max-width: 500px;
+      height: 500px;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    #contact .right-container .form-footer {
+      padding: 3rem;
+    }
+    #contact .right-container .form-footer ::placeholder {
+      align-items: center;
+      margin-top: 10px;
+      color: rgba(245, 245, 245, 0.7);
+    }
+    #contact .right-container .form-footer input {
+      width: 100%;
+      font-size: 24px;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background: none;
+      color: white;
+      border-bottom: 1px solid #cc9966;
+      margin: 25px 0;
+    }
+    #contact .right-container .form-footer input:hover {
+      border: 1px solid #cc9966;
+    }
+    #contact .right-container .form-footer input:focus {
+      border: 1px solid #cc9966;
+      box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+      -webkit-box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+      -moz-box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+    }
+    #contact .right-container .form-footer .textarea {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid #cc9966;
+      background: none;
+      font-size: 14px;
+      outline: none;
+      width: 100%;
+    }
+    #contact .right-container .form-footer .textarea:focus {
+      border: 1px solid #cc9966;
+      box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+      -webkit-box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+      -moz-box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+    }
+    #contact .right-container .form-footer .textarea:hover {
+      border: 1px solid #cc9966;
+    }
+    #contact .right-container .form-footer button {
+      display: flex;
+      justify-content: end;
+      border: none;
+      background: none;
+      margin-top: 20px;
+      margin-left: 200px;
+      margin-top: 20px;
+      color: white;
+      font-size: 22px;
+      width: 40%;
+    }
+    #contact .right-container .form-footer button:hover {
+      color: #CC9966;
+    }
+    #contact span {
+      font-size: 30px;
+      color: white;
+    }
+  }
+
+  /*-------*/
+
+  @media (max-width: 1024px) {
+    #intro nav {
+      background-color: rgba(0, 0, 0, 0.6);
+      height: 60px;
+      padding-top: 5px;
+      position: fixed;
+      width: 100%;
+      z-index: 99;
+    }
+    #intro nav .container-menu {
+      display: flex;
+      justify-content: end;
+    }
+    #intro nav .container-menu ul {
+      display: flex;
+      gap: 60px;
+      font-size: 35px;
+      padding-right: 80px;
+      list-style: none;
+    }
+    #intro nav .container-menu ul a {
+      color: #cc9966;
+      text-decoration: none;
+    }
+    #intro nav .container-menu ul a:hover {
+      border-bottom: 3px solid #cc9966;
+    }
+    #intro nav .container-menu ul a:focus {
+      border-bottom: 3px solid #cc9966;
+    }
+    #intro nav .container-menu ul a .input:focus {
+      outline: none !important;
+      border: 1px solid #CC9966;
+      box-shadow: 0 0 10px #b67533;
+    }
+    main {
+      background-image: url(/antique-cafe-bg-01.jpg);
+      background-attachment: fixed;
+      height: 185vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    main .container {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-top: 100px;
+      position: relative;
+    }
+    main .upper-text {
+      display: grid;
+      align-items: center;
+      width: 500px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 25px;
+    }
+    main .upper-text p {
+      margin-top: 15px;
+      color: #cc9966;
+    }
+    main .bottom-text {
+      display: grid;
+      align-items: center;
+      width: 500px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.7;
+    }
+    main .bottom-text a {
+      text-decoration: none;
+      color: yellow;
+    }
+    main .bottom-text a:hover {
+      color: aqua;
+    }
+    main .text-explore a {
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 25px;
+      left: 140px;
+      gap: 10px;
+      max-width: 228px;
+      border-radius: 10px;
+      height: 80px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #cc9966;
+      padding: 25px;
+      font-size: 25px;
+      text-decoration: none;
+    }
+    main .text-explore a:hover {
+      color: white;
+    }
+    main .text-explore a i {
+      padding-right: 10px;
+    }
+    #menu {
+      background-image: url(/antique-cafe-bg-02.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 200vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      height: 1762px;
+    }
+    #menu .title {
+      text-align: center;
+      margin: 140px auto;
+      font-size: 25px;
+      width: 400px;
+      background-color: white;
+      color: #666;
+      border-radius: 20px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+    .container .left-menu {
+      width: 335px;
+      height: 700px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(63, 25, 99);
+      margin-top: -100px;
+      padding: 50px;
+      gap: 20px;
+    }
+    .container .left-menu .img1 {
+      display: flex;
+      margin-right: 10px;
+    }
+    .container .left-menu .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 10px;
+    }
+    .container .left-menu .text h3 {
+      margin-top: -4px;
+      color: #cc9966;
+    }
+    .container .left-menu .text div {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+    .container .right-menu {
+      display: flex;
+      flex-direction: column;
+      margin-top: -10px;
+      width: 335px;
+      height: 755px;
+      border-radius: 20px;
+      background-color: rgb(104, 14, 51);
+      padding: 50px;
+      gap: 20px;
+    }
+    .container .right-menu .img2 {
+      display: flex;
+      margin-right: 10px;
+    }
+    .container .right-menu .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 10px;
+    }
+    .container .right-menu .text h3 {
+      margin-top: -4px;
+      color: #cc9966;
+    }
+    .container .right-menu .text div {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+    #about {
+      background-image: url(/antique-cafe-bg-03.jpg);
+      position: relative;
+      right: 250;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 1064px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    #about .container {
+      position: relative;
+    }
+    #about .container .wrapper {
+      max-width: 500px;
+      height: 450px;
+      position: absolute;
+      right: 80px;
+      top: 250px;
+      padding: 50px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+    }
+    #about .container .wrapper .about-our-cafe {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      font-size: larger;
+      line-height: 1.6;
+    }
+    #about .container .wrapper .about-our-cafe h1 {
+      padding-bottom: 20px;
+      color: #006666;
+    }
+    #about .container .wrapper a {
+      color: white;
+      border: 0;
+      position: absolute;
+      width: 180px;
+      height: 56px;
+      bottom: -100px;
+      left: -1px;
+      font-size: 1.5rem;
+      background-color: #006666;
+      border-radius: 10px;
+      padding-left: 35px;
+      padding-top: 15px;
+      text-decoration: none;
+    }
+    #about .container .wrapper a:hover{
+        background-color: #017a7a;
+    }
+    #contact {
+      background-image: url(/antique-cafe-bg-04.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 215vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      position: relative;
+    }
+    #contact .container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 200px;
+    }
+    #contact .left-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      max-width: 500px;
+      height: 500px;
+      position: relative;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    #contact .left-container .wrapper-left h1 {
+      margin: 15px 0 15px 0;
+      font-size: 40px;
+      color: #006666;
+    }
+    #contact .left-container .wrapper-left p {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+    #contact .left-container .wrapper-left span {
+      font-size: 20px;
+      color: black;
+    }
+    #contact .left-container .wrapper-left a {
+      color: #006666;
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    #contact .left-container .map {
+      background-color: #006666;
+      position: absolute;
+      border: 0;
+      width: 250px;
+      height: 86px;
+      bottom: 25px;
+      left: 140px;
+      font-size: 1.8rem;
+      border-radius: 10px;
+      padding-left: 15px;
+      padding-top: 28px;
+    }
+   
+    }
+    #contact .left-container .map i {
+      color: white;
+      padding-right: 30px;
+    }
+    #contact .right-container {
+      background-color: rgba(0, 0, 0, 0.8);
+      max-width: 500px;
+      height: 500px;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    #contact .right-container .form-footer {
+      padding: 3rem;
+    }
+    #contact .right-container .form-footer ::placeholder {
+      align-items: center;
+      margin-top: 10px;
+      color: rgba(245, 245, 245, 0.7);
+    }
+    #contact .right-container .form-footer input {
+      width: 100%;
+      font-size: 24px;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background: none;
+      color: white;
+      border-bottom: 1px solid #cc9966;
+      margin: 25px 0;
+    }
+    #contact .right-container .form-footer input:hover {
+      border: 1px solid #cc9966;
+    }
+    #contact .right-container .form-footer input:focus {
+      border: 1px solid #cc9966;
+      box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+      -webkit-box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+      -moz-box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+    }
+    #contact .right-container .form-footer .textarea {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid #cc9966;
+      background: none;
+      font-size: 14px;
+      outline: none;
+      width: 100%;
+    }
+    #contact .right-container .form-footer .textarea:focus {
+      border: 1px solid #cc9966;
+      box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+      -webkit-box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+      -moz-box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+    }
+    #contact .right-container .form-footer .textarea:hover {
+      border: 1px solid #cc9966;
+    }
+    #contact .right-container .form-footer button {
+      display: flex;
+      justify-content: end;
+      border: none;
+      background: none;
+      margin-top: 20px;
+      margin-left: 200px;
+      margin-top: 20px;
+      color: white;
+      font-size: 22px;
+      width: 40%;
+    }
+    #contact .right-container .form-footer button:hover {
+      color: #CC9966;
+    }
+    #contact span {
+      font-size: 30px;
+      color: white;
+    }
+  
+  @media (max-width: 645px) {
+    #intro nav {
+      display: none;
+    }
+    #intro nav body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    main {
+      background-image: url(/antique-cafe-bg-01.jpg);
+      background-attachment: fixed;
+      height: 185vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    main .container {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      padding-top: 100px;
+      position: relative;
+    }
+    main .upper-text {
+      display: grid;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 25px;
+      width: 359px;
+      margin: 0 auto;
+    }
+    main .upper-text p {
+      margin-top: 15px;
+      color: #cc9966;
+    }
+    main .bottom-text {
+      display: grid;
+      align-items: center;
+      width: 359px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 25px;
+      line-height: 1.7;
+    }
+    main .bottom-text a {
+      text-decoration: none;
+      color: yellow;
+    }
+    main .bottom-text a:hover {
+      color: aqua;
+    }
+    main .text-explore a {
+      max-width: 259px;
+      margin-top: -50px;
+      border-radius: 10px;
+      height: 80px;
+      padding-top: 25px;
+      margin-left: -85px;
+    }
+    main .text-explore a:hover {
+      color: white;
+    }
+    #menu {
+      background-image: url(/antique-cafe-bg-02.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 200vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      height: 1762px;
+    }
+    #menu .title {
+      text-align: center;
+      margin: 140px auto;
+      font-size: 25px;
+      width: 400px;
+      background-color: white;
+      color: #666;
+      border-radius: 20px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+    .container .left-menu {
+      width: 335px;
+      height: 700px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(38, 38, 39);
+      margin-top: -100px;
+      padding: 50px;
+      gap: 20px;
+    }
+    .container .left-menu .img1 {
+      display: flex;
+      margin-right: 10px;
+    }
+    .container .left-menu .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 10px;
+    }
+    .container .left-menu .text h3 {
+      margin-top: -4px;
+      color: #cc9966;
+    }
+    .container .left-menu .text div {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+    .container .right-menu {
+      display: flex;
+      flex-direction: column;
+      margin-top: -10px;
+      width: 335px;
+      height: 755px;
+      border-radius: 20px;
+      background-color: rgb(4, 78, 55);
+      padding: 50px;
+      gap: 20px;
+    }
+    .container .right-menu .img2 {
+      display: flex;
+      margin-right: 10px;
+    }
+    .container .right-menu .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 10px;
+    }
+    .container .right-menu .text h3 {
+      margin-top: -4px;
+      color: #cc9966;
+    }
+    .container .right-menu .text div {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+    #about {
+      background-image: url(/antique-cafe-bg-03.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 1064px;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    #about .container {
+      position: relative;
+      margin-top: -70px;
+      margin-right: -65px;
+      margin-left: 15px;
+      line-height: 1.5;
+    }
+    #about .container .wrapper {
+      max-width: 500px;
+      height: 650px;
+      position: absolute;
+      right: 80px;
+      top: 250px;
+      padding: 50px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+    }
+    #about .container .wrapper .about-our-cafe {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      font-size: larger;
+      line-height: 1.6;
+    }
+    #about .container .wrapper .about-our-cafe h1 {
+      padding-bottom: 20px;
+      color: #006666;
+    }
+    #about .container .wrapper a {
+      color: white;
+      border: 0;
+      position: absolute;
+      width: 180px;
+      height: 56px;
+      bottom: -100px;
+      left: -1px;
+      font-size: 1.5rem;
+      background-color: #006666;
+      border-radius: 10px;
+      padding-left: 35px;
+      padding-top: 15px;
+      text-decoration: none;
+    }
+    #contact {
+      background-image: url(/antique-cafe-bg-04.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 225vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      position: relative;
+    }
+    #contact .container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 200px;
+      margin-left: 10px;
+      width: 356px;
+    }
+    #contact .left-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      max-width: 500px;
+      height: 500px;
+      position: relative;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    #contact .left-container .wrapper-left h1 {
+      margin: 15px 0 15px 0;
+      font-size: 40px;
+      color: #006666;
+    }
+    #contact .left-container .wrapper-left p {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+    #contact .left-container .wrapper-left span {
+      font-size: 20px;
+      color: black;
+    }
+    #contact .left-container .wrapper-left a {
+      color: #006666;
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    #contact .left-container .map {
+      background-color: #006666;
+      position: absolute;
+      border: 0;
+      width: 250px;
+      height: 86px;
+      bottom: 25px;
+      left: 50px;
+      font-size: 1.8rem;
+      border-radius: 10px;
+      padding-left: 15px;
+      padding-top: 28px;
+    }
+    #contact .left-container .map i {
+      color: white;
+      padding-right: 30px;
+    }
+    #contact .right-container {
+      background-color: rgba(0, 0, 0, 0.8);
+      max-width: 356px;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    #contact .right-container .form-footer {
+      padding: 3rem;
+    }
+    #contact .right-container .form-footer ::placeholder {
+      align-items: center;
+      margin-top: 10px;
+      color: rgba(245, 245, 245, 0.7);
+    }
+    #contact .right-container .form-footer input {
+      width: 100%;
+      font-size: 24px;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background: none;
+      color: white;
+      border-bottom: 1px solid #cc9966;
+      margin: 25px 0;
+    }
+    #contact .right-container .form-footer input:hover {
+      border: 1px solid #cc9966;
+    }
+    #contact .right-container .form-footer input:focus {
+      border: 1px solid #cc9966;
+      box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+      -webkit-box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+      -moz-box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+    }
+    #contact .right-container .form-footer .textarea {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid #cc9966;
+      background: none;
+      font-size: 14px;
+      outline: none;
+      width: 100%;
+    }
+    #contact .right-container .form-footer .textarea:focus {
+      border: 1px solid #cc9966;
+      box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+      -webkit-box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+      -moz-box-shadow: -4px 1px 19px 4px rgba(204, 153, 102, 0.75);
+    }
+    #contact .right-container .form-footer .textarea:hover {
+      border: 1px solid #cc9966;
+    }
+    #contact .right-container .form-footer button {
+      display: flex;
+      justify-content: end;
+      border: none;
+      background: none;
+      margin-top: 20px;
+      margin-left: 115px;
+      margin-top: 20px;
+      color: white;
+      font-size: 22px;
+      width: 40%;
+    }
+    #contact .right-container .form-footer button:hover {
+      color: #CC9966;
+    }
+    #contact span {
+      font-size: 30px;
+      color: white;
+    }
+  }
